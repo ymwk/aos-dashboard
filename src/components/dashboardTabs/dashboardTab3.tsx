@@ -1,7 +1,7 @@
 import React from 'react';
 import { Section } from '@components/panel/PanelComponent';
 
-import { FlightPanel } from '@components/instance/flightPanel';
+import { FlightPanel } from '@components/instance/FlightPanel';
 import { HourlyPanel } from '@components/instance/HourlyPanel';
 import { WeatherPanel } from '@components/instance/WeatherPanel';
 import { PassengerPanel } from '@components/instance/PassengerPanel';

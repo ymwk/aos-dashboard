@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import classes from './combobox.module.scss';
 
 interface ComboboxProps {
@@ -18,7 +18,7 @@ const Combobox: React.FC<ComboboxProps> = (props) => {
   const [currentValue, setCurrentValue] = useState(options[0].value);
   const [showOptions, setShowOptions] = useState(false);
 
-  const comboboxRef = useRef(null);
+  const comboboxRef = useRef<HTMLDivElement>(null);
 
   const handleOnChangeSelectValue = (e: React.ChangeEvent<any>) => {
     setCurrentValue(e.target.innerText);
@@ -30,19 +30,16 @@ const Combobox: React.FC<ComboboxProps> = (props) => {
   };
 
   // 바깥영역 클릭하면 닫기
+  const handleSelect = useCallback((e: MouseEvent) => {
+    if (!e.target || !comboboxRef.current?.contains(e.target as HTMLElement)) {
+      setShowOptions(false);
+    }
+  }, []); // 빈 배열로 타이밍 고정
+
   useEffect(() => {
-    const handleSelect = (e: MouseEvent) => {
-      if (!e.target) return;
-
-      // TODO: contains error (comboboxRef 값이 null 이어서 생기는 오류)
-      if (!comboboxRef.current?.contains(e.target as HTMLElement)) {
-        setShowOptions(false);
-      }
-    };
-
     document.addEventListener('click', handleSelect);
     return () => document.removeEventListener('click', handleSelect);
-  }, [comboboxRef]);
+  }, [handleSelect]); // handleSelect만 의존
 
   return (
     <>
