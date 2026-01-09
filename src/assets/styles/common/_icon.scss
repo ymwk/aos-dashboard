@@ -1,0 +1,193 @@
+.ic-comm {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-style: normal;
+  aspect-ratio: 1;
+  width: calc(var(--root) * 30);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.i--airport {
+  width: calc(var(--root) * 33);
+  background-image: url(/src/assets/images/logo/logo_incheon.svg);
+}
+.i--departure-w {
+  width: calc(var(--root) * 34);
+  background-image: url(/src/assets/images/icon/ic_departure_w.svg);
+}
+.i--arrival-w {
+  width: calc(var(--root) * 28);
+  background-image: url(/src/assets/images/icon/ic_arrival_w.svg);
+}
+.i--departure {
+  width: calc(var(--root) * 30);
+  background-image: url(/src/assets/images/icon/ic_departure.svg);
+}
+.i--arrival {
+  width: calc(var(--root) * 30);
+  background-image: url(/src/assets/images/icon/ic_arrival.svg);
+}
+.i--t1 {
+  width: calc(var(--root) * 47);
+  background-image: url(/src/assets/images/icon/ic_t1.svg);
+}
+.i--t2 {
+  width: calc(var(--root) * 41);
+  background-image: url(/src/assets/images/icon/ic_t2.svg);
+}
+.i--t1-g {
+  width: calc(var(--root) * 70);
+  background-image: url(/src/assets/images/icon/ic_t1_g.svg);
+}
+.i--t2-g {
+  width: calc(var(--root) * 62);
+  background-image: url(/src/assets/images/icon/ic_t2_g.svg);
+}
+.i--t1-w {
+  width: calc(var(--root) * 24);
+  background-image: url(/src/assets/images/icon/ic_t1_w.svg);
+}
+.i--t2-w {
+  width: calc(var(--root) * 24);
+  background-image: url(/src/assets/images/icon/ic_t2_w.svg);
+}
+.i--t1-bg {
+  width: calc(var(--root) * 26);
+  background-image: url(/src/assets/images/icon/ic_t1_bg.svg);
+
+  &.s--sm {
+    width: calc(var(--root) * 24);
+  }
+}
+.i--t2-bg {
+  width: calc(var(--root) * 26);
+  background-image: url(/src/assets/images/icon/ic_t2_bg.svg);
+
+  &.s--sm {
+    width: calc(var(--root) * 24);
+  }
+}
+.i--clock {
+  width: calc(var(--root) * 18);
+  background-image: url(/src/assets/images/icon/ic_clock.svg);
+}
+.i--plane {
+  aspect-ratio: unset;
+  width: calc(var(--root) * 39);
+  height: calc(var(--root) * 25);
+  background-image: url(/src/assets/images/icon/ic_plane.svg);
+}
+.i--person {
+  aspect-ratio: unset;
+  width: calc(var(--root) * 18);
+  height: calc(var(--root) * 22);
+  background-image: url(/src/assets/images/icon/ic_person.svg);
+}
+.i--gate {
+  width: calc(var(--root) * 21);
+  background-image: url(/src/assets/images/icon/ic_gate.svg);
+}
+.i--parking {
+  width: calc(var(--root) * 37);
+  background-image: url(/src/assets/images/icon/ic_parking.svg);
+}
+.i--checkin-w {
+  width: calc(var(--root) * 23);
+  background-image: url(/src/assets/images/icon/ic_checkin.svg);
+}
+.i--dgate-w {
+  width: calc(var(--root) * 28);
+  background-image: url(/src/assets/images/icon/ic_dgate.svg);
+}
+.i--bgate-w {
+  width: calc(var(--root) * 21);
+  background-image: url(/src/assets/images/icon/ic_bgate.png);
+}
+
+.i--plus,
+.i--minus {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--c-gray2);
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.i--plus::before,
+.i--plus::after,
+.i--minus::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--c-secondary);
+}
+
+.i--plus::before {
+  content: '';
+  width: 2px;
+  height: 10px;
+}
+
+.i--close {
+  min-width: 1em;
+  min-height: 1em;
+  font-size: 25px;
+  font-weight: 300;
+
+  &::after {
+    content: '×';
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &.s--lg {
+    font-size: 32px;
+  }
+}
+
+.i--prev,
+.i--next,
+.i--down {
+  width: calc(var(--root) * 20);
+  background-image: url(/src/assets/images/icon/ic_arr_down.svg);
+}
+
+.i--prev {
+  transform: rotate(90deg);
+}
+.i--next {
+  transform: rotate(-90deg);
+}
+
+// weather
+
+.i--w-sunny {
+  width: calc(var(--root) * 65);
+  background-image: url(/src/assets/images/weather/ic_w_sunny.svg);
+
+  &.s--sm {
+    width: calc(var(--root) * 20);
+  }
+}
+
+.i--w-sun-cloud {
+  width: calc(var(--root) * 65);
+  background-image: url(/src/assets/images/weather/ic_w_sun_cloud.svg);
+
+  &.s--sm {
+    width: calc(var(--root) * 28);
+  }
+}

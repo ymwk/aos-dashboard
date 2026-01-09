@@ -1,0 +1,180 @@
+.table-panel {
+  table-layout: fixed;
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
+  font-size: calc(var(--root) * 14);
+  font-weight: 600;
+
+  th,
+  td {
+    padding: 0 calc(var(--root) * 2);
+  }
+
+  thead th .panel-label {
+    margin-bottom: calc(var(--root) * 8);
+  }
+
+  .t--airport {
+    font-size: calc(var(--root) * 18);
+    font-weight: 600;
+    color: #454b54;
+  }
+  .t--arrival {
+    color: #dd9200;
+  }
+  .t--departure {
+    color: #2f88dd;
+  }
+
+  .th-icon {
+    padding-left: calc(var(--root) * 10);
+  }
+
+  &.st--border {
+    tbody {
+      th,
+      td {
+        border-bottom: calc(var(--root) * 1) dashed #8f95b2;
+
+        &:has(.stay-detail) {
+          border-top: 0 hidden;
+        }
+      }
+    }
+  }
+
+  &:has(.stay-detail) {
+    margin-bottom: auto;
+    tbody {
+      th,
+      td {
+        padding-top: calc(var(--root) * 10);
+      }
+
+      td:has(.stay-detail) {
+        padding-bottom: calc(var(--root) * 10);
+      }
+    }
+  }
+}
+
+.panel-cont {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.al--center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--root) * 3);
+}
+
+.ic-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: calc(var(--root) * 22);
+  padding: 0 calc(var(--root) * 5);
+  border-radius: calc(var(--root) * 4);
+  background-color: var(--gray);
+  color: #fff !important;
+  font-size: calc(var(--root) * 12);
+
+  &.c--warn {
+    background-color: var(--c-warn);
+  }
+  &.c--active {
+    background-color: #3e87e4;
+  }
+  &.c--success {
+    background-color: var(--primary);
+  }
+  &.c--error {
+    background-color: #dd0000;
+  }
+
+  &.s--sm {
+    line-height: calc(var(--root) * 16);
+    padding: 0 calc(var(--root) * 3);
+  }
+
+  &.st--round {
+    border-radius: calc(var(--root) * 22);
+    padding: 0 calc(var(--root) * 10);
+
+    &.c--error {
+      background-color: #fff1f1;
+      color: #dd0000 !important;
+    }
+  }
+}
+
+.stay-detail {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--root) * 12);
+  padding: calc(var(--root) * 2) calc(var(--root) * 38);
+  font-size: calc(var(--root) * 12);
+}
+
+.section-timegraph {
+  gap: calc(var(--root) * 10);
+
+  .panel-cont {
+    flex: 1 0 0;
+    gap: calc(var(--root) * 15);
+  }
+
+  .tit {
+    width: calc(var(--root) * 70);
+  }
+
+  .cont {
+    flex-grow: 1;
+    height: 100%;
+  }
+}
+
+.section-passenger {
+  .panel-label {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: calc(var(--root) * 35);
+      left: 50%;
+      width: calc(var(--root) * 102);
+      height: calc(var(--root) * 80);
+      transform: translateX(-50%);
+    }
+  }
+
+  .th-all .panel-label::after {
+    background: url(/src/assets/images/logo/logo_incheon_g.svg) no-repeat center center / calc(var(--root) * 102);
+  }
+  .th-t1 .panel-label::after {
+    background: url(/src/assets/images/icon/ic_t1_g.svg) no-repeat center center / calc(var(--root) * 70);
+  }
+  .th-t2 .panel-label::after {
+    background: url(/src/assets/images/icon/ic_t2_g.svg) no-repeat center center / calc(var(--root) * 62);
+  }
+
+  .table-panel {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+

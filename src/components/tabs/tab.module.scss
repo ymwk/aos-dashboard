@@ -1,0 +1,26 @@
+.tabButtonWrap {
+  display: flex;
+  gap: calc(var(--root) * 8);
+}
+
+.tabButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(var(--root) * 23);
+  border-radius: calc(var(--root) * 23);
+  padding: 0 1em;
+  background-color: var(--gray);
+  color: #fff;
+  font-size: calc(var(--root) * 14);
+  line-height: 1;
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+  &.active {
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 500;
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,44 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--root) * 3);
+  padding: 0 calc(var(--root) * 10);
+  font-size: calc(var(--root) * 10);
+  color: #454b54;
+
+  &.terminal {
+    width: calc(var(--root) * 97);
+    font-size: calc(var(--root) * 16);
+    color: #0143a9;
+
+    .bar {
+      background-color: #0143a9;
+    }
+  }
+}
+
+.value {
+  text-align: right;
+}
+
+.barWrap {
+  display: flex;
+  height: calc(var(--root) * 5);
+  border-radius: calc(var(--root) * 5);
+  background-color: rgba(217, 217, 217, 0.3);
+}
+
+.bar {
+  border-radius: calc(var(--root) * 5);
+  background-color: #3e87e4;
+}
+
+:global {
+  .section-schedule .table-panel tbody tr:nth-child(even) {
+    :local {
+      .barWrap {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}

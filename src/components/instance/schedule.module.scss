@@ -1,0 +1,110 @@
+.panel,
+.header {
+  border-top-left-radius: calc(var(--root) * 36);
+}
+
+.summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: calc(var(--root) * 24);
+  height: 100%;
+  margin-right: auto;
+  padding: 0 calc(var(--root) * 50) 0 calc(var(--root) * 35);
+  border-radius: calc(var(--root) * 100) 0 calc(var(--root) * 100) 0;
+  background-color: var(--gray);
+  color: #fff;
+  font-size: calc(var(--root) * 15);
+  font-weight: 500;
+  line-height: 1.5;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(var(--root) * -6);
+    display: block;
+    border: calc(var(--root) * 44) solid transparent;
+    border-top-color: var(--gray);
+    border-left-color: var(--gray);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: block;
+    border: calc(var(--root) * 40) solid #fff;
+    border-radius: calc(var(--root) * 20);
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .tit {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--root) * 8);
+    font-size: calc(var(--root) * 16);
+
+    em {
+      font-size: calc(var(--root) * 18);
+      font-weight: 600;
+    }
+  }
+}
+
+.utils {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--root) * 20);
+  margin-left: auto;
+  padding: 0 calc(var(--root) * 27);
+  font-size: calc(var(--root) * 14);
+  color: #454b54;
+
+  .tit {
+    color: #121212;
+  }
+
+  .item {
+    display: inline-flex;
+    align-items: center;
+    gap: calc(var(--root) * 5);
+  }
+}
+
+.schedule {
+  :global {
+    .table-panel {
+      font-size: calc(var(--root) * 12);
+      font-weight: 400;
+
+      td {
+        padding: calc(var(--root) * 2) 0;
+      }
+
+      em {
+        font-weight: 600;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #d8e8fb;
+      }
+    }
+  }
+
+  &.arrival {
+    :global {
+      .table-panel {
+        tbody tr:nth-child(even) {
+          background-color: #fefbde;
+        }
+      }
+    }
+  }
+}
