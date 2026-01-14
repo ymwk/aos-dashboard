@@ -1,5 +1,5 @@
 import { Panel, PanelHeader, PanelBody } from '@components/panel/PanelComponent';
-import { BarChart } from '@components/chart/barChart';
+import { BarChart } from '@components/chart/BarChart';
 
 export const ParkingPanel: React.FC = () => {
   return (

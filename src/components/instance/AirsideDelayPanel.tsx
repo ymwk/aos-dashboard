@@ -1,5 +1,4 @@
 import { Panel, PanelHeader, PanelBody } from '@components/panel/PanelComponent';
-import { ProgressChart } from '@components/chart/ProgressChart';
 
 export const AirsideDelayPanel: React.FC = () => {
   return (
