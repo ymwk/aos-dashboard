@@ -14,11 +14,11 @@ import "./assets/styles/index.scss"
 
 
 import App from "./App.tsx";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <HashRouter
+    <BrowserRouter
       future={{
         v7_startTransition: true,
         v7_relativeSplatPath: true,
@@ -26,6 +26,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       basename="/aos-dashboard/"
     >
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
