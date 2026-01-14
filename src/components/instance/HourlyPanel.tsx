@@ -2,12 +2,12 @@ import { Panel, PanelHeader, PanelBody } from '@components/panel/PanelComponent'
 
 export const HourlyPanel: React.FC = () => {
   return (
-    <Panel>
+    <Panel className="section-timegraph">
       <PanelHeader>
         시간대별 출발여객
         <small>T1 219명 / T2 219명</small>
       </PanelHeader>
-      <PanelBody className="section-timegraph">
+      <PanelBody>
         <div className="panel-cont">
           <span className="tit al--center">
             <i className="ic-comm i--t1" />

@@ -1,0 +1,84 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--root) * 10);
+  margin-right: calc(var(--root) * 10);
+  font-size: calc(var(--root) * 12);
+
+  &.c1 {
+    color: #ffe22f;
+
+    .bar {
+      background: linear-gradient(to right, #fffcde 0%, currentColor 100%);
+    }
+    .value {
+      color: #454b54;
+    }
+  }
+
+  &.c2 {
+    color: #ea7000;
+    .bar {
+      background: linear-gradient(to right, #ffeddc 0%, currentColor 100%);
+    }
+    .value {
+      color: #e7862d;
+    }
+  }
+
+  &.c3 {
+    color: #e70e12;
+    .bar {
+      background: linear-gradient(to right, #ffe3e3 0%, currentColor 100%);
+    }
+  }
+}
+
+.barWrap {
+  position: relative;
+  display: flex;
+  height: calc(var(--root) * 12);
+  border-radius: calc(var(--root) * 12);
+  background-color: #fbfbfb;
+}
+
+.bar {
+  position: relative;
+  border-radius: calc(var(--root) * 12);
+  background-color: currentColor;
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(65%, -52%);
+  font-size: calc(var(--root) * 18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--root) * 5);
+
+  svg {
+    width: calc(var(--root) * 20);
+    height: calc(var(--root) * 18);
+    fill: currentColor;
+  }
+}
+
+.value {
+  position: absolute;
+  bottom: 130%;
+  right: calc(var(--root) * -6);
+  ;
+  white-space: nowrap;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  color: #7c7c7c;
+}

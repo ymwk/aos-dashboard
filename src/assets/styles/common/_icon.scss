@@ -16,21 +16,29 @@
   width: calc(var(--root) * 33);
   background-image: url(/src/assets/images/logo/logo_incheon.svg);
 }
-.i--departure-w {
-  width: calc(var(--root) * 34);
-  background-image: url(/src/assets/images/icon/ic_departure_w.svg);
-}
-.i--arrival-w {
-  width: calc(var(--root) * 28);
-  background-image: url(/src/assets/images/icon/ic_arrival_w.svg);
-}
 .i--departure {
   width: calc(var(--root) * 30);
   background-image: url(/src/assets/images/icon/ic_departure.svg);
 }
+.i--departure-w {
+  width: calc(var(--root) * 30);
+  background-image: url(/src/assets/images/icon/ic_departure_w.svg);
+}
+.i--departure-g {
+  width: calc(var(--root) * 30);
+  background-image: url(/src/assets/images/icon/ic_departure_g.svg);
+}
 .i--arrival {
   width: calc(var(--root) * 30);
   background-image: url(/src/assets/images/icon/ic_arrival.svg);
+}
+.i--arrival-w {
+  width: calc(var(--root) * 30);
+  background-image: url(/src/assets/images/icon/ic_arrival_w.svg);
+}
+.i--arrival-g {
+  width: calc(var(--root) * 30);
+  background-image: url(/src/assets/images/icon/ic_arrival_g.svg);
 }
 .i--t1 {
   width: calc(var(--root) * 47);
@@ -67,6 +75,14 @@
 .i--t2-bg {
   width: calc(var(--root) * 26);
   background-image: url(/src/assets/images/icon/ic_t2_bg.svg);
+
+  &.s--sm {
+    width: calc(var(--root) * 24);
+  }
+}
+.i--ca-bg {
+  width: calc(var(--root) * 26);
+  background-image: url(/src/assets/images/icon/ic_ca_bg.svg);
 
   &.s--sm {
     width: calc(var(--root) * 24);

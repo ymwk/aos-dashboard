@@ -35,7 +35,7 @@ const DashboardPage: React.FC = () => {
           onActiveIndexChange={(swiper) => {
             setActiveIndex(swiper.activeIndex);
           }}
-          initialSlide={2}
+          initialSlide={1}
         >
           <SwiperSlide>
             <DashboardTab1 />

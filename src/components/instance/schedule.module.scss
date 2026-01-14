@@ -77,34 +77,3 @@
     gap: calc(var(--root) * 5);
   }
 }
-
-.schedule {
-  :global {
-    .table-panel {
-      font-size: calc(var(--root) * 12);
-      font-weight: 400;
-
-      td {
-        padding: calc(var(--root) * 2) 0;
-      }
-
-      em {
-        font-weight: 600;
-      }
-
-      tbody tr:nth-child(even) {
-        background-color: #d8e8fb;
-      }
-    }
-  }
-
-  &.arrival {
-    :global {
-      .table-panel {
-        tbody tr:nth-child(even) {
-          background-color: #fefbde;
-        }
-      }
-    }
-  }
-}

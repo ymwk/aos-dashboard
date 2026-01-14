@@ -2,12 +2,12 @@ import { Panel, PanelHeader, PanelBody } from '@components/panel/PanelComponent'
 
 export const PassengerPanel: React.FC = () => {
   return (
-    <Panel>
+    <Panel className="section-passenger">
       <PanelHeader>
         여객(실적/계획)
         <span className="unit">*단위: 천명</span>
       </PanelHeader>
-      <PanelBody className="section-passenger">
+      <PanelBody>
         <table className="table-panel">
           <colgroup>
             <col style={{ width: '15%' }} />

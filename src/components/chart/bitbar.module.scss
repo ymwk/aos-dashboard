@@ -1,0 +1,69 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--root) * 10);
+  width: calc(var(--root) * 236);
+  font-size: calc(var(--root) * 14);
+
+  &.c1 {
+    color: #fe9738;
+  }
+
+  &.c2 {
+    color: #2f88dd;
+    .value {
+      color: #0143A9
+    }
+    .barWrap {
+      background-color: rgba(1, 67, 169, 0.12);
+    }
+  }
+
+  &.c3 {
+    color: #7ed4c5;
+    .value {
+      color: #7F5B84
+    }
+    .barWrap {
+      background-color: rgba(229, 246, 243, 1);
+    }
+  }
+}
+
+.value {
+  text-align: right;
+}
+
+.barWrap {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: calc(var(--root) * 12);
+  border-radius: calc(var(--root) * 12);
+  overflow: hidden;
+  background-color: rgba(254, 151, 56, 0.12);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to right,
+      transparent 0 calc(var(--root) * 22),
+      white calc(var(--root) * 22) calc(var(--root) * 24)
+    );
+  }
+}
+
+.bar {
+  background-color: currentColor;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  color: #1e1e1e;
+}

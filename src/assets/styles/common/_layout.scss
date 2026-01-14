@@ -16,18 +16,18 @@
   overflow-y: auto;
   background-color: #f5f5f5;
   color: #121212;
-  transition: background-color .5s, color .5s;
+  transition: background-color 0.5s, color 0.5s;
 
   &.dashboard1 {
     background-color: #1a1e3b;
     color: #fff;
 
     .dashboard-pagination {
-      background-color: #B2C0FF;
-      color: #1A1E3B
+      background-color: #b2c0ff;
+      color: #1a1e3b;
     }
     .swiper-pagination-bullet-active {
-      background-color: #2A3460;
+      background-color: #2a3460;
     }
   }
 }
@@ -42,9 +42,21 @@
 
 .dashboard-wrapper {
   flex-grow: 1;
+  display: flex;
 }
 
 .swiper-dashboard {
+  flex-grow: 1;
+  display: flex;
+
+  .swiper-wrapper {
+    flex-grow: 1;
+  }
+
+  .swiper-slide {
+    flex-grow: 1;
+    display: flex
+  }
 }
 
 .dashboard-pagination-wrap {

@@ -1,7 +1,7 @@
 .progress {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--root) * 3);
+  gap: calc(var(--root) * 4);
   padding: 0 calc(var(--root) * 10);
   font-size: calc(var(--root) * 10);
   color: #454b54;
@@ -15,10 +15,17 @@
       background-color: #0143a9;
     }
   }
+
+  &.airside {
+    .bar {
+      background-color: #DD0000;
+    }
+  }
 }
 
 .value {
   text-align: right;
+  white-space: nowrap;
 }
 
 .barWrap {

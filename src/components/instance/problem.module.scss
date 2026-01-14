@@ -59,15 +59,3 @@
     box-shadow: 0 0 calc(var(--root) * 4) 0 #00000040;
   }
 }
-
-.body {
-  :global {
-    .table-panel {
-      table-layout: auto;
-    }
-
-    .th-haslabel {
-      width: 16%;
-    }
-  }
-}

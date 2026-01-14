@@ -29,8 +29,8 @@ export const ArrivalPanel: React.FC = () => {
           </span>
         </div>
       </PanelHeader>
-      <PanelBody className={`${classes.schedule} ${classes.arrival}`}>
-        <table className="table-panel">
+      <PanelBody>
+        <table className="table-panel table-schedule">
           <thead>
             <tr>
               <th>
@@ -86,7 +86,7 @@ export const ArrivalPanel: React.FC = () => {
               <td>162</td>
               <td>2</td>
               <td>
-                <span className="ic-label c--warn s--sm">09:30</span>
+                <span className="ic-label bg--warn s--sm">09:30</span>
               </td>
               <td>30분</td>
               <td>

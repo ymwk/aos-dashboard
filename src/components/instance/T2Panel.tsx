@@ -1,5 +1,5 @@
 import { Panel } from '@components/panel/PanelComponent';
-import { Progress } from '@components/progress/ProgressComponent';
+import { ProgressChart } from '@components/chart/ProgressChart';
 import classes from './terminal.module.scss';
 
 export const T2Panel: React.FC = () => {
@@ -105,21 +105,21 @@ export const T2Panel: React.FC = () => {
                 <i className="ic-comm i--checkin-w" />
               </span>
               체크인
-              <Progress total={90} value={45} type="terminal" />
+              <ProgressChart total={90} value={45} type="terminal" />
             </span>
             <span className={classes.graph}>
               <span className={`${classes.ico} ${classes.c2}`}>
                 <i className="ic-comm i--dgate-w" />
               </span>
               출국장
-              <Progress total={90} value={30} type="terminal" />
+              <ProgressChart total={90} value={30} type="terminal" />
             </span>
             <span className={classes.graph}>
               <span className={classes.ico}>
                 <i className="ic-comm i--bgate-w" />
               </span>
               탑승구
-              <Progress total={90} value={20} type="terminal" />
+              <ProgressChart total={90} value={20} type="terminal" />
             </span>
             <span className={classes.state}>14</span>
             <span className={classes.state}>2</span>

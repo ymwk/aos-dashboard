@@ -65,7 +65,7 @@ export const ProblemPanel: React.FC = () => {
           }}
         >
           <SwiperSlide>
-            <table className="table-panel st--border">
+            <table className="table-panel table-delay">
               <thead>
                 <tr>
                   <th className="th-haslabel">
@@ -89,7 +89,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t1-bg" />
                     </div>
                   </th>
@@ -103,7 +103,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t2-bg" />
                     </div>
                   </th>
@@ -117,7 +117,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t2-bg" />
                     </div>
                   </th>
@@ -131,7 +131,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t1-bg" />
                     </div>
                   </th>
@@ -145,7 +145,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t1-bg" />
                     </div>
                   </th>
@@ -159,7 +159,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t2-bg" />
                     </div>
                   </th>
@@ -173,7 +173,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t1-bg" />
                     </div>
                   </th>
@@ -187,7 +187,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t2-bg" />
                     </div>
                   </th>
@@ -201,7 +201,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t2-bg" />
                     </div>
                   </th>
@@ -217,7 +217,7 @@ export const ProblemPanel: React.FC = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <table className="table-panel st--border">
+            <table className="table-panel table-delay">
               <thead>
                 <tr>
                   <th className="th-haslabel">
@@ -244,7 +244,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t1-bg" />
                     </div>
                   </th>
@@ -258,14 +258,14 @@ export const ProblemPanel: React.FC = () => {
                   <td colSpan={6}>
                     <div className="stay-detail">
                       <span>사유</span>
-                      <span className="ic-label st--round c--error">항공기 연결(도착지연)</span>
+                      <span className="ic-label st--round bg--error">항공기 연결(도착지연)</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t2-bg" />
                     </div>
                   </th>
@@ -279,14 +279,14 @@ export const ProblemPanel: React.FC = () => {
                   <td colSpan={6}>
                     <div className="stay-detail">
                       <span>사유</span>
-                      <span className="ic-label st--round c--error">공항,관제사유 접속지연</span>
+                      <span className="ic-label st--round bg--error">공항,관제사유 접속지연</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t2-bg" />
                     </div>
                   </th>
@@ -300,14 +300,14 @@ export const ProblemPanel: React.FC = () => {
                   <td colSpan={6}>
                     <div className="stay-detail">
                       <span>사유</span>
-                      <span className="ic-label st--round c--error">항로혼잡(출발지연)</span>
+                      <span className="ic-label st--round bg--error">항로혼잡(출발지연)</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--warn">DLY</span>
+                      <span className="ic-label bg--warn">DLY</span>
                       <i className="ic-comm i--t1-bg" />
                     </div>
                   </th>
@@ -321,7 +321,7 @@ export const ProblemPanel: React.FC = () => {
                   <td colSpan={6}>
                     <div className="stay-detail">
                       <span>사유</span>
-                      <span className="ic-label st--round c--error">정비(출발지연)</span>
+                      <span className="ic-label st--round bg--error">정비(출발지연)</span>
                     </div>
                   </td>
                 </tr>
@@ -330,7 +330,7 @@ export const ProblemPanel: React.FC = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <table className="table-panel st--border">
+            <table className="table-panel table-delay">
               <thead>
                 <tr>
                   <th className="th-haslabel">
@@ -354,7 +354,7 @@ export const ProblemPanel: React.FC = () => {
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--error">CNL</span>
+                      <span className="ic-label bg--error">CNL</span>
                       <i className="ic-comm i--t1-bg" />
                     </div>
                   </th>
@@ -367,14 +367,14 @@ export const ProblemPanel: React.FC = () => {
                   <td colSpan={5}>
                     <div className="stay-detail">
                       <span>사유</span>
-                      <span className="ic-label st--round c--error">정비사고로 인한 결항</span>
+                      <span className="ic-label st--round bg--error">정비사고로 인한 결항</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--error">CNL</span>
+                      <span className="ic-label bg--error">CNL</span>
                       <i className="ic-comm i--t2-bg" />
                     </div>
                   </th>
@@ -387,14 +387,14 @@ export const ProblemPanel: React.FC = () => {
                   <td colSpan={5}>
                     <div className="stay-detail">
                       <span>사유</span>
-                      <span className="ic-label st--round c--error">기상악화로 인한 결항</span>
+                      <span className="ic-label st--round bg--error">기상악화로 인한 결항</span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <th className="th-haslabel">
                     <div className="label-wrap">
-                      <span className="ic-label c--error">CNL</span>
+                      <span className="ic-label bg--error">CNL</span>
                       <i className="ic-comm i--t2-bg" />
                     </div>
                   </th>
@@ -407,7 +407,7 @@ export const ProblemPanel: React.FC = () => {
                   <td colSpan={5}>
                     <div className="stay-detail">
                       <span>사유</span>
-                      <span className="ic-label st--round c--error">기상악화로 인한 결항</span>
+                      <span className="ic-label st--round bg--error">기상악화로 인한 결항</span>
                     </div>
                   </td>
                 </tr>

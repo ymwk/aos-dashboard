@@ -1,6 +1,6 @@
 import { Panel, PanelHeader, PanelBody } from '@components/panel/PanelComponent';
-import { Progress } from '@components/progress/ProgressComponent';
-import classes from './schedule.module.scss'
+import { ProgressChart } from '@components/chart/ProgressChart';
+import classes from './schedule.module.scss';
 
 export const DeparturePanel: React.FC = () => {
   return (
@@ -30,8 +30,8 @@ export const DeparturePanel: React.FC = () => {
           </span>
         </div>
       </PanelHeader>
-      <PanelBody className={classes.schedule}>
-        <table className="table-panel">
+      <PanelBody>
+        <table className="table-panel table-schedule st--departure">
           <thead>
             <tr>
               <th>
@@ -79,10 +79,10 @@ export const DeparturePanel: React.FC = () => {
               <td>뉴욕</td>
               <td>162</td>
               <td>
-                <Progress total={90} value={81} />
+                <ProgressChart total={90} value={81} />
               </td>
               <td>
-                <Progress total={90} value={81} />
+                <ProgressChart total={90} value={81} />
               </td>
               <td>50%</td>
               <td>2</td>
@@ -98,15 +98,15 @@ export const DeparturePanel: React.FC = () => {
               <td>뉴욕</td>
               <td>162</td>
               <td>
-                <Progress total={90} value={81} />
+                <ProgressChart total={90} value={81} />
               </td>
               <td>
-                <Progress total={90} value={81} />
+                <ProgressChart total={90} value={81} />
               </td>
               <td>50%</td>
               <td>2</td>
               <td>
-                <span className="ic-label c--warn s--sm">09:30</span>
+                <span className="ic-label bg--warn s--sm">09:30</span>
               </td>
               <td>
                 <em className="c--warn">지연</em>
@@ -121,29 +121,10 @@ export const DeparturePanel: React.FC = () => {
               <td>뉴욕</td>
               <td>162</td>
               <td>
-                <Progress total={90} value={81} />
+                <ProgressChart total={90} value={81} />
               </td>
               <td>
-                <Progress total={90} value={87} />
-              </td>
-              <td>50%</td>
-              <td>2</td>
-              <td>08:20</td>
-              <td>정상</td>
-            </tr>
-            <tr>
-              <td>
-                <i className="ic-comm i--t1-bg s--sm" />
-              </td>
-              <td>KE011</td>
-              <td>09:00</td>
-              <td>뉴욕</td>
-              <td>162</td>
-              <td>
-                <Progress total={90} value={81} />
-              </td>
-              <td>
-                <Progress total={90} value={70} />
+                <ProgressChart total={90} value={87} />
               </td>
               <td>50%</td>
               <td>2</td>
@@ -159,10 +140,29 @@ export const DeparturePanel: React.FC = () => {
               <td>뉴욕</td>
               <td>162</td>
               <td>
-                <Progress total={90} value={81} />
+                <ProgressChart total={90} value={81} />
               </td>
               <td>
-                <Progress total={90} value={81} />
+                <ProgressChart total={90} value={70} />
+              </td>
+              <td>50%</td>
+              <td>2</td>
+              <td>08:20</td>
+              <td>정상</td>
+            </tr>
+            <tr>
+              <td>
+                <i className="ic-comm i--t1-bg s--sm" />
+              </td>
+              <td>KE011</td>
+              <td>09:00</td>
+              <td>뉴욕</td>
+              <td>162</td>
+              <td>
+                <ProgressChart total={90} value={81} />
+              </td>
+              <td>
+                <ProgressChart total={90} value={81} />
               </td>
               <td>50%</td>
               <td>2</td>
