@@ -13,7 +13,7 @@
   }
 
   thead th .panel-label {
-    margin-bottom: calc(var(--root) * 8);
+    margin-bottom: calc(var(--root) * 6);
   }
 
   .t--airport {
@@ -133,6 +133,18 @@
       tbody tr:nth-child(even) {
         background-color: #d8e8fb;
       }
+    }
+  }
+
+  &.table-airport {
+    td {
+      font-size: calc(var(--root) * 24);
+      font-weight: 500;
+    }
+
+    .th-icon {
+      width: calc(var(--root) * 85);
+      padding-right: calc(var(--root) * 25);
     }
   }
 }
@@ -335,7 +347,7 @@
           left: 0;
           transform: translateY(-50%);
           border: solid transparent;
-          border-width: 5px 6px;
+          border-width: calc(var(--root) * 5) calc(var(--root) * 6);
           border-right-color: currentColor;
         }
       }
